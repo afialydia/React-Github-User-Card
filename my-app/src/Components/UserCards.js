@@ -1,14 +1,16 @@
-import React from 'react';
-import Users from './Users';
+import React from "react";
+import Users from "./Users";
 
 const UserCards = props => {
+	return (
+		<div class="card" key={this.myData.id}>
+			<h3 class="name">{this.myData.name}</h3>
+			<p class="username">{this.myData.username}</p>
+			<p>Location: {this.myData.location}</p>
 
-    return(
-        <>
-        <p> hello from UserCards</p>
-        <Users />
-        </>
-    )
-}
+			<p>Bio: {this.myData.bio}</p>
+		</div>
+	);
+};
 
 export default UserCards;
